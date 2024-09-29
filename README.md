@@ -17,4 +17,6 @@ public IPV4 address for backend routes
 
 ```bash
 3.108.223.76
+
+https://shu16r8jsk.execute-api.ap-south-1.amazonaws.com/prod/dashboard
 ```
