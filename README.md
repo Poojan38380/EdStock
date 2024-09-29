@@ -20,3 +20,9 @@ public IPV4 address for backend routes
 
 https://shu16r8jsk.execute-api.ap-south-1.amazonaws.com/prod/dashboard
 ```
+
+Deployed frontend
+
+```
+https://main.dtcyll6opd0pw.amplifyapp.com/
+```
