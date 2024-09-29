@@ -1,7 +1,9 @@
+"use client";
 import Navbar from "./(components)/Navbar";
 import Sidebar from "./(components)/Sidebar";
+import StoreProvider from "./redux";
 
-const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className={`light flex bg-gray-50 text-gray-900 w-full min-h-screen`}>
       <Sidebar />
@@ -12,6 +14,13 @@ const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
         {children}
       </main>
     </div>
+  );
+};
+const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <StoreProvider>
+      <DashboardLayout>{children}</DashboardLayout>
+    </StoreProvider>
   );
 };
 
